@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/archos/ac50da/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/archos/ac50da/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-    vendor/archos/ac50da/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/archos/ac50da/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/archos/ac50da/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/archos/ac50da/proprietary/bin/qmuxd:system/bin/qmuxd \
@@ -48,10 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/archos/ac50da/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/archos/ac50da/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
-    vendor/archos/ac50da/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/archos/ac50da/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/archos/ac50da/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/archos/ac50da/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
     vendor/archos/ac50da/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/archos/ac50da/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/archos/ac50da/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -180,12 +175,6 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libactuator_bu64297_q13v06k_camcorder.so:system/vendor/lib/libactuator_bu64297_q13v06k_camcorder.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libactuator_bu64297_q13v06k_camera.so:system/vendor/lib/libactuator_bu64297_q13v06k_camera.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libactuator_bu64297_q13v06k.so:system/vendor/lib/libactuator_bu64297_q13v06k.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_spirit_camcorder.so:system/vendor/lib/libactuator_rohm_bu64243gwz_spirit_camcorder.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_spirit_camera.so:system/vendor/lib/libactuator_rohm_bu64243gwz_spirit_camera.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_spirit.so:system/vendor/lib/libactuator_rohm_bu64243gwz_spirit.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
@@ -193,34 +182,6 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_common.so:system/vendor/lib/libchromatix_imx220_common.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_default_video.so:system/vendor/lib/libchromatix_imx220_default_video.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_hfr_120fps.so:system/vendor/lib/libchromatix_imx220_hfr_120fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_hfr_60fps.so:system/vendor/lib/libchromatix_imx220_hfr_60fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_hfr_90fps.so:system/vendor/lib/libchromatix_imx220_hfr_90fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_liveshot.so:system/vendor/lib/libchromatix_imx220_liveshot.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_preview.so:system/vendor/lib/libchromatix_imx220_preview.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_snapshot.so:system/vendor/lib/libchromatix_imx220_snapshot.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx220_zsl.so:system/vendor/lib/libchromatix_imx220_zsl.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_common.so:system/vendor/lib/libchromatix_imx230_common.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_default_video.so:system/vendor/lib/libchromatix_imx230_default_video.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_hfr_120fps.so:system/vendor/lib/libchromatix_imx230_hfr_120fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_hfr_60fps.so:system/vendor/lib/libchromatix_imx230_hfr_60fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_hfr_90fps.so:system/vendor/lib/libchromatix_imx230_hfr_90fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_liveshot.so:system/vendor/lib/libchromatix_imx230_liveshot.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_preview.so:system/vendor/lib/libchromatix_imx230_preview.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_snapshot.so:system/vendor/lib/libchromatix_imx230_snapshot.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_imx230_zsl.so:system/vendor/lib/libchromatix_imx230_zsl.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_common.so:system/vendor/lib/libchromatix_ov8858_q8v19w_common.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so:system/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_preview.so:system/vendor/lib/libchromatix_ov8858_q8v19w_preview.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_video_nonHD.so:system/vendor/lib/libchromatix_ov8858_q8v19w_video_nonHD.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so:system/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
@@ -245,38 +206,11 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/archos/ac50da/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_imx220.so:system/vendor/lib/libmmcamera_imx220.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_imx230.so:system/vendor/lib/libmmcamera_imx230.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_ov8858_q8v19w_spirit.so:system/vendor/lib/libmmcamera_ov8858_q8v19w_spirit.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_qtech_ov8858_eeprom.so:system/vendor/lib/libmmcamera_qtech_ov8858_eeprom.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_sonyimx220_eeprom.so:system/vendor/lib/libmmcamera_sonyimx220_eeprom.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
-    vendor/archos/ac50da/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
@@ -332,3 +266,4 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     cktnvtool
 endif
+
