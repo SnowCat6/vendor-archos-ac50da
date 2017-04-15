@@ -80,7 +80,6 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/lib64/libwcnss_qmi.so:system/lib64/libwcnss_qmi.so \
     vendor/archos/ac50da/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/archos/ac50da/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/archos/ac50da/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/archos/ac50da/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/archos/ac50da/proprietary/vendor/lib64/egl/eglsubAndroid.so:system/vendor/lib64/egl/eglsubAndroid.so \
     vendor/archos/ac50da/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
