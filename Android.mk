@@ -24,8 +24,8 @@ ifeq ($(QCPATH),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES_64 := proprietary/lib64/libloc_api_v02.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libloc_api_v02.so
+LOCAL_SRC_FILES_64 := proprietary/lib64/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES_32 := proprietary/lib/$(LOCAL_MODULE).so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -35,8 +35,8 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_ds_api
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES_64 := proprietary/lib64/libloc_ds_api.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libloc_ds_api.so
+LOCAL_SRC_FILES_64 := proprietary/lib64/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES_32 := proprietary/lib/$(LOCAL_MODULE).so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -46,7 +46,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libwpa_qmi_eap_proxy
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES := proprietary/lib64/libwpa_qmi_eap_proxy.so
+LOCAL_SRC_FILES := proprietary/lib64/$(LOCAL_MODULE).so
 LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -56,8 +56,8 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libtime_genoff.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libtime_genoff.so
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/$(LOCAL_MODULE).so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -68,7 +68,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
+LOCAL_SRC_FILES := proprietary/app/TimeService/$(LOCAL_MODULE).apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -79,7 +79,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := shutdownlistener
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES := proprietary/app/shutdownlistener/shutdownlistener.apk
+LOCAL_SRC_FILES := proprietary/app/shutdownlistener/$(LOCAL_MODULE).apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -90,7 +90,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilmsgtunnel
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/$(LOCAL_MODULE).apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -102,7 +102,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcnvitems
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES := proprietary/framework/qcnvitems.jar
+LOCAL_SRC_FILES := proprietary/framework/$(LOCAL_MODULE).jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -112,7 +112,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
+LOCAL_SRC_FILES := proprietary/framework/$(LOCAL_MODULE).jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -122,7 +122,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := cktnvtool
 LOCAL_MODULE_OWNER := wileyfox
-LOCAL_SRC_FILES := proprietary/bin/cktnvtool
+LOCAL_SRC_FILES := proprietary/bin/$(LOCAL_MODULE)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
@@ -134,7 +134,7 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_OWNER  := qcom
 LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/libfastcvopt.so
+LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
 LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
@@ -146,7 +146,7 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_OWNER  := qcom
 LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/libmmcamera2_is.so
+LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
 LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
@@ -158,7 +158,7 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_OWNER  := qcom
 LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/libmmcamera2_stats_algorithm.so
+LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
 LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
@@ -170,13 +170,57 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_OWNER  := qcom
 LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/libadsprpc.so
+LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
 LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libmmcamera2_q3a_core
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
 
 endif
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqmi_cci
+LOCAL_MODULE_OWNER := wileyfox
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/$(LOCAL_MODULE).so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqmi_common_so
+LOCAL_MODULE_OWNER := wileyfox
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/$(LOCAL_MODULE).so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqmiservices
+LOCAL_MODULE_OWNER := wileyfox
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/$(LOCAL_MODULE).so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
 
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib/egl && pushd $(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib64/egl && pushd $(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
