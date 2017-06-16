@@ -140,43 +140,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE        := libmmcamera2_is
-LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB      := 32
-LOCAL_MODULE_OWNER  := qcom
-LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := libmmcamera2_stats_algorithm
-LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB      := 32
-LOCAL_MODULE_OWNER  := qcom
-LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE        := libadsprpc
-LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB      := 32
-LOCAL_MODULE_OWNER  := qcom
-LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/$(LOCAL_MODULE).so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := libmmcamera2_q3a_core
 LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MULTILIB      := 32
