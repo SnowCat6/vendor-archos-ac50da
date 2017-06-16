@@ -19,14 +19,12 @@
 PRODUCT_PACKAGES += \
     libmmcamera2_sensor_modules_32 \
 
-_PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     mm-qcamera-daemon \
     mm-qcamera-app \
-    liboemcamera_32 \
-    libmmcamera2_stats_modules_32 \
-    libmmcamera2_pproc_modules_32 \
-    libmmcamera2_isp_modules_32 \
-    libmmcamera2_iface_modules_32
+    libmmcamera2_stats_algorithm_32 libmmcamera2_stats_modules_32 \
+    libmmcamera2_c2d_module_32 libmmcamera2_cpp_module_32 libmmcamera2_iface_modules_32 libmmcamera2_imglib_modules_32 libmmcamera2_is_32 libmmcamera2_isp_modules_32 libmmcamera2_pproc_modules_32 libmmcamera2_q3a_core_32 libmmcamera2_sensor_modules_32 \
+    libmmcamera2_vpe_module_32 libmmcamera2_wnr_module_32 libmmcamera_faceproc_32 libmmcamera_hdr_lib_32 libmmcamera_imglib_32 liboemcamera_32 
 
 PRODUCT_PACKAGES += \
 	libactuator_dw9714_q13v04b_32 libactuator_dw9714_q13v04b_camcorder_32 libactuator_dw9714_q13v04b_camera_32 \
@@ -244,7 +242,7 @@ PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/archos/ac50da/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
-PRODUCT_COPY_FILES += \
+_PRODUCT_COPY_FILES += \
     vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/archos/ac50da/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
